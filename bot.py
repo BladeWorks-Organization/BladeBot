@@ -407,7 +407,7 @@ class BladeBot(commands.Cog):
 
         if response.status_code == 200:
             data = response.json()
-            return await ctx.send(f'{data['url']}')
+            return await ctx.send(f"{data['url']}")
         else:
             return await ctx.send("Buddy you are one, what else are you trying to get from this command huh?")
         
